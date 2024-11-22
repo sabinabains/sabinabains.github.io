@@ -68,17 +68,48 @@ Example
           <a href="https://sabinabains.github.io/about_us.html">About Us</a>
         </li>
 
-<script src="./assets/script.js"></script>
 
+    <script>
+	    
+	noStroke();
+	var x = 11; // position of the car
+	
+	var drawCar = function() {
+	    background(252, 255, 214);
+	
+	    // draw the car body
+	    fill(255, 0, 115);
+	    rect(x, 200, 100, 20);
+	    rect(x + 15, 178, 70, 40);
+	    
+	    // draw the wheels
+	    fill(77, 66, 66);
+	    ellipse(x + 25, 221, 24, 24);
+	    ellipse(x + 75, 221, 24, 24);
+	    
+	    x = x + 3;
+	};
+	
+	mouseMoved = function() {
+	    fill(mouseX, mouseY, mouseY);
+	    ellipse(mouseX, mouseY, 10, 10);
+	};
+
+    </script>
+	    
+	    	    <!--
+<script src="./assets/script.js"></script>
+	    
     <script>
         let d = new Date();
         alert("Today's date is " + d);
     </script>
 
+
   <script>
       let d = new Date();
       document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
   </script>
-
+-->
     </body>
 </html>
