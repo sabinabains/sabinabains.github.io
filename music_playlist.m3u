@@ -1,0 +1,7 @@
+#EXTM3U
+
+#EXTINF:111, Sample artist name - Sample track title
+https://github.com/sabinabains/sabinabains.github.io/raw/main/Born%20to%20Run.mp3
+
+#EXTINF:222,Example Artist name - Example track title
+https://github.com/sabinabains/sabinabains.github.io/raw/main/hungry_heart.mp3
