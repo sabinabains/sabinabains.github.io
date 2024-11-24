@@ -4,37 +4,15 @@
         <meta charset="utf-8">
         <title> Sabs and Drew</title>
 	<link rel="icon" type="image/x-icon" href="./images/pistachio.ico">
-
-
         <style>
-
-        html {
-          cursor: url("https://i.imgur.com/8Jhi9oS.png"), auto;
-          }
-		
-        h1 {
-            color: rgb(0, 232, 15);
-            text-align: center;
-        }  
-        
         </style>
     </head>
     <body>
-    
-    <h1 style="text-align: center"> LOLJK </h1>
-    
-    
-    <img src="./images/turkey.jpg" alt="turkey" width="1000"> 
-
-    <form action="https://sabinabains.github.io/rsvp_results" method = GET>
-    	<div>
-          <label>Last Name<label>
-          <input name = "name">
-          <button>Submit<button>
-        </div>
-    </form>
-
-
-
+	<form action="{{ url_for("gfg")}}" method="post">
+	<label for="firstname">First Name:</label>
+	<input type="text" id="firstname" name="fname" placeholder="firstname">
+	<label for="lastname">Last Name:</label>
+	<input type="text" id="lastname" name="lname" placeholder="lastname">
+	<button type="submit">Login</button>
     </body>
 </html>
